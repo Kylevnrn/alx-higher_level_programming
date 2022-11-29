@@ -3,9 +3,9 @@ import random
 number = random.randint(-10000, 10000)
 if number < 0:
 ldigit = -number % 10
-    ldigit = -ldigit
+ldigit = -ldigit
 else:
- ldigit = number % 10
+ldigit = number % 10
 if ldigit > 5:
 print("Last digit of {} is {} and is greater \
 than 5".format(number, ldigit))
