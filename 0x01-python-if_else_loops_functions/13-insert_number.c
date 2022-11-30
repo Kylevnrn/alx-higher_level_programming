@@ -5,8 +5,11 @@
 
 /**
  * insert_node - insert node in a linked list
+ *
  * @head: pointer to the first node of the linked list
+ *
  * @number: integer value of the new node to insert
+ *
  * Return: the head of the linked list with the new node inserted
  */
 listint_t *insert_node(listint_t **head, int number)
