@@ -13,4 +13,4 @@ def print_matrix_integer(matrix=[[]]):
                     print("{:d}".format(int2), end="\n")
                 else:
                     print("{:d} ".format(int2), end="")
-                 cont = 0
+            cont = 0
