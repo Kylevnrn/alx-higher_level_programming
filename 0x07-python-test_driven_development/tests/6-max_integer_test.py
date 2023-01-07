@@ -36,11 +36,11 @@ class TestMaxInteger(unittest.TestCase):
         self.assertEqual(max_integer([0.0, 0, 1]), 1)
         self.assertEqual(max_integer([1.0, 0, 0.0]), 1)
 
-     def test_invalid(self):
-         self.assertRaises(TypeError, max_integer, [1, "cat", 3],
-                           msg="unorderable types: str() > int()")
-         self.assertRaises(TypeError, max_integer, [1, 0, "7"],
-                           msg="unorderable types: str() > int()")
+    def test_invalid(self):
+        self.assertRaises(TypeError, max_integer, [1, "cat", 3],
+                          msg="unorderable types: str() > int()")
+        self.assertRaises(TypeError, max_integer, [1, 0, "7"],
+                          msg="unorderable types: str() > int()")
 
     def test_weird(self):
         self.assertEqual(max_integer([1, 0, 00]), 1)
