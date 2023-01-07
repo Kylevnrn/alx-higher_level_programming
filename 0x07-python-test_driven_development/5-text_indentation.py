@@ -23,17 +23,17 @@ def text_indentation(text):
 
         for i in range(len(text)):
             if i < len(text) and text[i] == '.' or text[i] == '?'\
-                or text[i] == ':':
-                    if flag == 0:
-                        temp = text.split(text[i], 1)
-                        flag = 1
-                    else:
-                        temp = substring.split(text[i], 1)
-                    new += temp[0].lstrip(' ') + text[i]
-                    substring = temp[1]
-                    print("{:s}".format(new))
-                    print()
-                    new = ""
+               or text[i] == ':':
+                if flag == 0:
+                    temp = text.split(text[i], 1)
+                    flag = 1
+                else:
+                    temp = substring.split(text[i], 1)
+                new += temp[0].lstrip(' ') + text[i]
+                substring = temp[1]
+                print("{:s}".format(new))
+                print()
+                new = ""
         if flag == 0:
             text = text.lstrip(' ')
             text = text.rstrip(' ')
